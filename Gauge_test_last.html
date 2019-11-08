@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <tite></tite>
+
+        <link rel="stylesheet" href="GaugeCss_last.css">
+        <!-- <script type="text/javascript"></script> -->
+    </head>
+
+    <head>
+        
+    </head>
+
+    <body>
+            <div id="radial" data-value="0">
+            <span id="needle" value="8"></span>
+            <span id="spacing"></span>
+            </div>
+        
+        
+    </body>
+    <script>
+        var arr= [];
+        arr.push(1);
+        arr.push(2);
+        arr.push({'result' : 123});
+
+        function init() {
+    // create gauges
+            let theRadialGauge = new radial('#radial', {
+                min: 0,
+                max: 100,
+                value: 80,
+                startAngle: -45,
+                sweepAngle: 270,
+                showTicks: true,
+                showTickText: true,
+                tickSpacing: 5,
+                showText: 'Value',
+                isReadOnly: false
+            });
+        }
+
+    </script>
+</html>
